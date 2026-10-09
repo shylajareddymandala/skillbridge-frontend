@@ -88,7 +88,7 @@ function Profile() {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:8080/users/${user.id}`,
+        `https://skillbridge-backend-production-947b.up.railway.app/users/${user.id}`,
         {
           method: "PUT",
           headers: {

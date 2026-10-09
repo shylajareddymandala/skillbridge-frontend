@@ -12,7 +12,7 @@ function CollaborationRequests() {
   const currentUser = JSON.parse(localStorage.getItem("user"));
 
   const loadRequests = () => {
-    fetch("http://localhost:8080/requests")
+    fetch("- https://skillbridge-backend-production-947b.up.railway.app/requests")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch requests");
@@ -40,7 +40,7 @@ function CollaborationRequests() {
       setUpdatingId(requestId);
 
       const response = await fetch(
-        `http://localhost:8080/requests/${requestId}/status?status=${status}`,
+        `- https://skillbridge-backend-production-947b.up.railway.app/requests/${requestId}/status?status=${status}`,
         {
           method: "PUT",
         }
@@ -85,7 +85,7 @@ function CollaborationRequests() {
       setUpdatingId(requestId);
 
       const response = await fetch(
-        `http://localhost:8080/requests/${requestId}`,
+        `- https://skillbridge-backend-production-947b.up.railway.app/requests/${requestId}`,
         {
           method: "DELETE",
         }

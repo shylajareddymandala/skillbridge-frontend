@@ -45,7 +45,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8080/users", {
+      const response = await fetch("https://skillbridge-backend-production-947b.up.railway.app/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

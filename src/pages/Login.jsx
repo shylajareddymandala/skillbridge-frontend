@@ -25,7 +25,7 @@ function Login() {
 
     try {
       const url =
-        `http://localhost:8080/users/login?email=${encodeURIComponent(email.trim())}&password=${encodeURIComponent(password)}`;
+        `https://skillbridge-backend-production-947b.up.railway.app/users/login?email=${encodeURIComponent(email.trim())}&password=${encodeURIComponent(password)}`;
 
       const response = await fetch(url, {
         method: "POST",

@@ -17,7 +17,7 @@ function Skills() {
 
   const fetchSkills = async () => {
     try {
-      const response = await fetch("http://localhost:8080/skills");
+      const response = await fetch("https://skillbridge-backend-production-947b.up.railway.app/skills");
 
       if (!response.ok) {
         throw new Error("Failed to fetch skills");
@@ -39,7 +39,7 @@ function Skills() {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/skills", {
+      const response = await fetch("https://skillbridge-backend-production-947b.up.railway.app/skills", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ function Skills() {
     }
 
     try {
-      const response = await fetch(`http://localhost:8080/skills/${id}`, {
+      const response = await fetch(`https://skillbridge-backend-production-947b.up.railway.app/skills/${id}`, {
         method: "DELETE",
       });
 

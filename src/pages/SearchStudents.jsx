@@ -18,7 +18,7 @@ function SearchStudents() {
 
   const fetchStudents = async () => {
     try {
-      const response = await fetch("http://localhost:8080/users");
+      const response = await fetch("https://skillbridge-backend-production-947b.up.railway.app/users");
 
       if (!response.ok) {
         throw new Error("Failed to fetch students");
@@ -48,7 +48,7 @@ function SearchStudents() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/requests/send?senderId=${currentUser.id}&receiverId=${studentId}&message=Hello! I would like to collaborate with you on SkillBridge.`,
+        `https://skillbridge-backend-production-947b.up.railway.app/requests/send?senderId=${currentUser.id}&receiverId=${studentId}&message=Hello! I would like to collaborate with you on SkillBridge.`,
         {
           method: "POST",
         }
